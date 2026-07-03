@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/screenshots/hero.png" alt="Aethelred / Checkmate Hero Banner" width="100%" />
+  <img src="docs/screenshots/Deep%20Analysis.png" alt="Aethelred / Checkmate Hero Banner" width="100%" />
 
   <br />
   <br />
@@ -50,21 +50,21 @@ We believe that chess engines are incredible tools, but they speak the language 
     <tr>
       <td align="center">
         <b>Main Dashboard</b><br>
-        <img src="docs/screenshots/dashboard.png" alt="Dashboard" width="400" />
+        <img src="docs/screenshots/Main%20Dashboard.png" alt="Dashboard" width="400" />
       </td>
       <td align="center">
         <b>Deep Analysis</b><br>
-        <img src="docs/screenshots/analysis.png" alt="Analysis" width="400" />
+        <img src="docs/screenshots/Deep%20Analysis.png" alt="Analysis" width="400" />
       </td>
     </tr>
     <tr>
       <td align="center">
         <b>Live Webcam Feed</b><br>
-        <img src="docs/screenshots/live.png" alt="Live Feed" width="400" />
+        <img src="docs/screenshots/Live%20Webcam%20Feed.png" alt="Live Feed" width="400" />
       </td>
       <td align="center">
         <b>Opponent Profiler</b><br>
-        <img src="docs/screenshots/profiles.png" alt="Profiler" width="400" />
+        <img src="docs/screenshots/Opponent%20Profiler.png" alt="Profiler" width="400" />
       </td>
     </tr>
   </table>
