@@ -1,9 +1,4 @@
 <div align="center">
-  
-
-  <br />
-  <br />
-
   <h1> Checkmate (Aethelred)</h1>
   
   <p>
