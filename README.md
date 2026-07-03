@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/screenshots/Deep%20Analysis.png" alt="Aethelred / Checkmate Hero Banner" width="100%" />
+  
 
   <br />
   <br />
