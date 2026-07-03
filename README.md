@@ -4,7 +4,7 @@
   <br />
   <br />
 
-  <h1>🏰 Checkmate (Aethelred)</h1>
+  <h1> Checkmate (Aethelred)</h1>
   
   <p>
     <b>The Ultimate Vision-Based Chess Strategy Analyzer & Opponent Profiler</b>
@@ -24,7 +24,7 @@
 
 ---
 
-## 🌟 Premium Introduction
+##  Premium Introduction
 
 **Checkmate** (internally known as *Aethelred*) is not just another chess engine. It is a full-stack, enterprise-grade chess intelligence platform designed to bridge the gap between silicon perfection and human understanding.
 
@@ -32,7 +32,7 @@ By leveraging a custom **Computer Vision (CV)** pipeline, Checkmate can "see" a 
 
 ---
 
-## 🧭 Project Philosophy
+##  Project Philosophy
 
 We believe that chess engines are incredible tools, but they speak the language of numbers (`+1.45`), not the language of humans. 
 
@@ -43,7 +43,7 @@ We believe that chess engines are incredible tools, but they speak the language 
 
 ---
 
-## 📸 UI / UX Showcase
+##  UI / UX Showcase
 
 <div align="center">
   <table>
@@ -77,32 +77,32 @@ We believe that chess engines are incredible tools, but they speak the language 
 
 ---
 
-## ✨ Enterprise Features
+##  Enterprise Features
 
-### 👁️‍🗨️ 1. Computer Vision Pipeline
+###  1. Computer Vision Pipeline
 Our vision system seamlessly extracts FEN strings from messy real-world images.
 * **YOLOv8 Object Detection:** Fast, accurate bounding boxes for the 64 squares.
 * **Perspective Warping:** Auto-rectifies skewed camera angles using OpenCV transformations.
 * **ResNet18 Piece Classification:** A deep convolutional neural network trained to recognize the 12 piece types (and empty squares) with high confidence.
 
-### ♟️ 2. Deep Engine Integration
+###  2. Deep Engine Integration
 * **Stockfish 16 NNUE:** The undisputed world champion open-source engine, integrated as a highly efficient async singleton.
 * **Multi-PV (Principal Variation):** Evaluates the top 3 best continuations simultaneously.
 * **Tactical Threat Radar:** Instantly highlights forks, pins, skewers, and discovered attacks.
 
-### 🧠 3. Explainable AI & Natural Language
+###  3. Explainable AI & Natural Language
 * **Grandmaster Persona:** Translates variations into actionable English coaching.
 * **Motif Recognition:** Scans for structural themes like "isolated pawns" or "outposts."
 * **Move Categorization:** Beautiful visual badges for Brilliant ‼, Excellent, Good, Inaccuracy, Mistake, and Blunder ??.
 
-### 🎭 4. Opponent Profiler
+###  4. Opponent Profiler
 * **Playstyle Detection:** Categorizes opponents automatically.
 * **Risk Tolerance Metrics:** Analyzes how often an opponent gambits or sacrifices.
 * **Endgame Skill Scoring:** Tracks accuracy drops as pieces leave the board.
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 Checkmate employs a highly decoupled, modular architecture modeled after elite FAANG monoliths.
 
@@ -144,7 +144,7 @@ Checkmate employs a highly decoupled, modular architecture modeled after elite F
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 
 | Layer | Technologies Used |
 | :--- | :--- |
@@ -158,7 +158,7 @@ Checkmate employs a highly decoupled, modular architecture modeled after elite F
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 The repository is organized as a clean monorepo, keeping the backend and frontend tightly synchronized yet physically decoupled.
 
@@ -184,7 +184,7 @@ Checkmate/
 
 ---
 
-## 🚀 Quickstart & Installation
+##  Quickstart & Installation
 
 ### 1. Prerequisites
 Ensure you have the following installed on your machine:
@@ -226,7 +226,7 @@ npm run dev
 
 ---
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 Checkmate is fully containerized and production-ready for deployment anywhere Docker runs.
 
@@ -240,7 +240,7 @@ docker-compose logs -f
 
 ---
 
-## ⚡ Performance Optimizations
+##  Performance Optimizations
 
 1. **Stockfish Singleton Pattern**: Instead of spawning a new 750MB process per API request, the FastAPI backend manages a centralized, async-locked singleton instance of Stockfish.
 2. **WebSockets for Video**: The `/ws/live` endpoint processes webcam streams at 5 FPS via binary WebSockets, drastically reducing HTTP overhead compared to traditional polling.
@@ -248,7 +248,7 @@ docker-compose logs -f
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions from the open-source community! 
 
@@ -262,7 +262,7 @@ Ensure your code passes all linting (`npm run lint` / `python -m py_compile`) be
 
 ---
 
-## 📜 License
+##  License
 
 Checkmate is proudly open-source and released under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
 
