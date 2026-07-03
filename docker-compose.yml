@@ -1,0 +1,66 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: aethelred-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example
+    volumes:
+      - ./backend:/app
+      - backend-logs:/app/logs
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: aethelred-frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.example
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    container_name: aethelred-db
+    environment:
+      POSTGRES_USER: aethelred
+      POSTGRES_PASSWORD: aethelred_secret
+      POSTGRES_DB: aethelred
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aethelred"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: aethelred-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - backend
+      - frontend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  backend-logs:
